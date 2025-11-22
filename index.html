@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>codecrafteddaily | Full Stack Engineer</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">&lt;codecrafteddaily /&gt;</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#contact" class="btn-small">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section id="hero">
+        <div class="container hero-content">
+            <p class="hero-subtitle">Daily Code Tips, Projects & Dev Insights</p>
+            <h1 class="glitch-text">Hello, I'm <span class="highlight">codecrafteddaily</span></h1>
+            <h2 class="typing-effect">I build <span id="typewriter"></span></h2>
+            <p class="hero-desc">
+                Faceless tech creator & Software Engineer (3.5 YOE). <br>
+                Specializing in Python, React, and Scalable DevOps solutions.
+            </p>
+            <div class="hero-buttons">
+                <a href="https://github.com" target="_blank" class="btn btn-primary"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://instagram.com" target="_blank" class="btn btn-outline"><i class="fab fa-instagram"></i> Instagram</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section-padding">
+        <div class="container about-grid">
+            <div class="about-text">
+                <h3 class="section-title">01. About The Brand</h3>
+                <p>
+                    I am a Software Engineer with 3.5 years of experience in the industry. **codecrafteddaily** is my digital garden—a faceless brand focused purely on the code, the architecture, and the problem-solving.
+                </p>
+                <p>
+                    I’m introverted by nature but expressive through syntax. My work bridges the gap between interactive Frontends (React/Vue) and robust Backends (Python/AWS). I believe in clean architecture, automation, and helping others level up their dev journey.
+                </p>
+                <div class="stats">
+                    <div class="stat-item">
+                        <h4>3.5+</h4>
+                        <p>Years Exp.</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4>50+</h4>
+                        <p>Projects</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4>DevOps</h4>
+                        <p>Specialist</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-visual">
+                <div class="code-window">
+                    <div class="window-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <div class="window-body">
+                        <code class="language-python">
+class Engineer:
+    def __init__(self):
+        self.stack = ["Python", "React"]
+        self.focus = "Automation"
+
+    def solve(self, problem):
+        return clean_code(problem)
+                        </code>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section-padding bg-darker">
+        <div class="container">
+            <h3 class="section-title">02. Tech Stack</h3>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fas fa-laptop-code skill-icon"></i>
+                    <h4>Frontend</h4>
+                    <div class="tags">
+                        <span>React</span>
+                        <span>Vue.js</span>
+                        <span>JavaScript (ES6+)</span>
+                        <span>HTML5/CSS3</span>
+                        <span>Tailwind</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-server skill-icon"></i>
+                    <h4>Backend</h4>
+                    <div class="tags">
+                        <span>Python</span>
+                        <span>Django/Flask</span>
+                        <span>PostgreSQL</span>
+                        <span>Redis</span>
+                        <span>REST APIs</span>
+                        <span>Celery</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-network-wired skill-icon"></i>
+                    <h4>DevOps & Cloud</h4>
+                    <div class="tags">
+                        <span>Docker</span>
+                        <span>AWS</span>
+                        <span>CI/CD</span>
+                        <span>Nginx</span>
+                        <span>Linux</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section-padding">
+        <div class="container">
+            <h3 class="section-title">03. Selected Projects</h3>
+            <div class="projects-grid">
+                
+                <article class="project-card">
+                    <div class="card-image">
+                        <img src="https://placehold.co/600x350/1a1a1a/00f2ff?text=Python+Automation" alt="Python Automation">
+                    </div>
+                    <div class="card-content">
+                        <h4>Python Automation Tool</h4>
+                        <p>A CLI tool designed to automate file organization and data scraping tasks. Reduces manual workload by 60%.</p>
+                        <div class="tech-stack-mini">
+                            <i class="fab fa-python"></i> Python
+                            <i class="fas fa-terminal"></i> Click
+                        </div>
+                        <a href="#" class="btn-link">View Code <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="card-image">
+                        <img src="https://placehold.co/600x350/1a1a1a/bd34fe?text=React+Dashboard" alt="React Dashboard">
+                    </div>
+                    <div class="card-content">
+                        <h4>React Analytics Dashboard</h4>
+                        <p>A responsive admin dashboard visualizing real-time data streams using Chart.js and Material UI.</p>
+                        <div class="tech-stack-mini">
+                            <i class="fab fa-react"></i> React
+                            <i class="fab fa-js"></i> D3.js
+                        </div>
+                        <a href="#" class="btn-link">View Code <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="card-image">
+                        <img src="https://placehold.co/600x350/1a1a1a/00f2ff?text=Docker+Microservice" alt="Microservice">
+                    </div>
+                    <div class="card-content">
+                        <h4>Dockerized Microservice</h4>
+                        <p>A scalable user authentication service built with Flask, containerized with Docker, and orchestrated via Compose.</p>
+                        <div class="tech-stack-mini">
+                            <i class="fab fa-docker"></i> Docker
+                            <i class="fas fa-flask"></i> Flask
+                        </div>
+                        <a href="#" class="btn-link">View Code <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="card-image">
+                        <img src="https://placehold.co/600x350/1a1a1a/bd34fe?text=AWS+Pipeline" alt="AWS Pipeline">
+                    </div>
+                    <div class="card-content">
+                        <h4>AWS Deployment Pipeline</h4>
+                        <p>Full CI/CD setup using GitHub Actions to deploy a Node.js application to AWS EC2 with auto-scaling.</p>
+                        <div class="tech-stack-mini">
+                            <i class="fab fa-aws"></i> AWS
+                            <i class="fas fa-sync"></i> CI/CD
+                        </div>
+                        <a href="#" class="btn-link">View Code <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="resources" class="section-padding bg-darker">
+        <div class="container">
+            <h3 class="section-title">04. Resources & Content</h3>
+            <div class="resource-grid">
+                <div class="resource-item">
+                    <i class="fas fa-file-code"></i>
+                    <h5>Python Cheatsheets</h5>
+                    <p>Essential syntax and libraries for data science.</p>
+                    <a href="#">Download</a>
+                </div>
+                <div class="resource-item">
+                    <i class="fas fa-road"></i>
+                    <h5>DevOps Roadmap</h5>
+                    <p>From Linux basics to Kubernetes mastery.</p>
+                    <a href="#">View Map</a>
+                </div>
+                <div class="resource-item">
+                    <i class="fas fa-lightbulb"></i>
+                    <h5>React Best Practices</h5>
+                    <p>Optimizing hooks and component rendering.</p>
+                    <a href="#">Read Tip</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="instagram" class="section-padding">
+        <div class="container">
+            <div class="insta-header">
+                <h3 class="section-title">Follow @codecrafteddaily</h3>
+                <a href="https://instagram.com" class="btn-text">View on Instagram</a>
+            </div>
+            <div class="insta-grid">
+                <div class="insta-post"></div> <div class="insta-post"></div>
+                <div class="insta-post"></div>
+                <div class="insta-post"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section-padding">
+        <div class="container contact-wrapper">
+            <div class="contact-content">
+                <h2>Let's Build Something.</h2>
+                <p>Interested in collaboration or have a question about code? Send me a message.</p>
+                <div class="social-links big-socials">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label>Name</label>
+                    <input type="text" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label>Message</label>
+                    <textarea rows="5" placeholder="Your message..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2024 codecrafteddaily. All Rights Reserved.</p>
+            <p class="credit">Designed with <i class="fas fa-code"></i> & <i class="fas fa-coffee"></i></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
